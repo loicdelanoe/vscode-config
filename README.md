@@ -1,5 +1,8 @@
 # VScode config
 
+## Version
+1.92.2 max
+
 ## Extensions
 - Laravel
 - Apc
