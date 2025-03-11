@@ -4,10 +4,6 @@
     --font-primary-color: #929192;
 }
 
-/* Lines column */
-/* .margin-view-overlays {
-    /* width: 10px !important; */
-
 /* Line numbers */
 .line-numbers {
     font-size: 12.5px !important;
@@ -15,7 +11,7 @@
 
 /* Better font rendering */
 * {
-    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.2) 0 1px 1px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -42,7 +38,6 @@
 
 .monaco-editor .dirty-diff-modified-pattern {
     background-image: linear-gradient(0deg, #FC9867 0%, #FC9867 100%) !important;
-    border-radius: 3px !important;
 }
 
 /* Intellisense window and action modal */
@@ -65,10 +60,6 @@
     border-radius: 5px !important;
 }
 
-.code-action-widget {
-    background-color: red !important;
-}
-
 /* Line Number */
 .monaco-editor .margin-view-overlays .line-numbers,
 .monaco-editor .sticky-line-number-inner {
@@ -78,11 +69,13 @@
 /* terminal */
 #terminal {
     height: 100% !important;
+    background-color: #fff !important;
 }
 
-/* Fix status bar overlap */
-/* .part.panel.basepanel.bottom.pane-composite-part div.content {
-    /* minus status bar height */
+/* Fix terminal height */
+#terminal div.split-view-container {
+    height: calc(100% - 0.4rem) !important;
+}
 
 .composite.title.has-composite-bar {
     justify-content: space-between !important;
@@ -102,6 +95,15 @@ div.composite.title.has-composite-bar {
 div.composite.title.has-composite-bar .composite-bar-container .actions-container .action-label {
     font-weight: bold !important;
     padding: 0 20px !important;
+}
+
+.monaco-workbench .pane-body.integrated-terminal .tabs-container {
+    border-bottom: 1px solid var(--border-color) !important;
+    border-color: var(--border-color) !important;
+}
+
+[id="workbench.parts.panel"] div.monaco-scrollable-element.mac {
+    background-color: #2D2A2E !important;
 }
 
 div.composite.title.has-composite-bar .composite-bar-container {
@@ -246,7 +248,7 @@ div.composite.title.has-composite-bar .composite-bar-container .action-item.chec
     z-index: 10;
 }
 
-.titlebar-center::after {
+/* .titlebar-center::after {
     content: '' !important;
     display: block;
     position: absolute;
@@ -254,7 +256,7 @@ div.composite.title.has-composite-bar .composite-bar-container .action-item.chec
     filter: blur(60px) !important;
     inset: -1rem !important;
     z-index: 1 !important;
-}
+} */
 
 /* Search icon */
 .search-icon {
@@ -408,10 +410,6 @@ div.composite.title.has-composite-bar .composite-bar-container .action-item.chec
     transform: scale(1.2);
 }
 
-.monaco-sash.mac.vertical {
-    display: none !important;
-}
-
 .monaco-editor .find-widget .find-part {
     gap: 2rem;
     margin-left: 1.3rem;
@@ -429,3 +427,30 @@ div.composite.title.has-composite-bar .composite-bar-container .action-item.chec
     margin-top: 1px;
     outline: none !important;
 }
+
+/* .editor-container {
+    text-shadow: 2px 2px 2px #CE5937!important;
+} */
+
+/* .explorer-folders-view .monaco-list-row {
+    min-height: 32px !important;
+    height: 100% !important;
+    line-height: 32px !important;
+    position: initial !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.explorer-folders-view .monaco-list {
+    --row-height: 32px !important;
+}
+
+.explorer-folders-view .monaco-list-rows {
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content !important;
+    height: fit-content !important;
+    overflow: scroll !important;
+} */
+
+
