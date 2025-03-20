@@ -428,29 +428,35 @@ div.composite.title.has-composite-bar .composite-bar-container .action-item.chec
     outline: none !important;
 }
 
-/* .editor-container {
-    text-shadow: 2px 2px 2px #CE5937!important;
-} */
+/* ----------------- */
+/* Typescript errors */
+/* ----------------- */
 
-/* .explorer-folders-view .monaco-list-row {
-    min-height: 32px !important;
-    height: 100% !important;
-    line-height: 32px !important;
-    position: initial !important;
-    display: flex !important;
-    align-items: center !important;
+/* Allow copying */
+.codicon-none {
+    user-select: text !important;
+    -webkit-user-select: text !important;
 }
 
-.explorer-folders-view .monaco-list {
-    --row-height: 32px !important;
+/* Hide errors */
+div.monaco-hover-content:has(.codicon-none) > .hover-row:first-child {
+    display: none !important;
+}
+div.monaco-hover-content:has([style="color:#f96363;"]) > .hover-row:first-child {
+    display: none !important
 }
 
-.explorer-folders-view .monaco-list-rows {
+/* Change order */
+.monaco-hover .monaco-hover-content {
     display: flex;
     flex-direction: column;
-    min-height: fit-content !important;
-    height: fit-content !important;
-    overflow: scroll !important;
-} */
-
-
+}
+.monaco-hover .monaco-hover-content .hover-row {
+    order: 2;
+}
+.monaco-hover .monaco-hover-content .hover-row:has(.codicon-none) {
+    order: 1;
+}
+.monaco-hover .monaco-hover-content .hover-row:has([style="color:#f96363;"]) {
+    order: 1;
+}
