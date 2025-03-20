@@ -3,6 +3,11 @@
 ## Version
 1.92.2 max
 
+## Install
+- Place `custom-css.css` in `.config/vscode/custom-css` (you should create this directory)
+- Copy/Paste `user_settings.json` in your `settings.json` (open command palette and choose to open settings in json format)
+- Copy/Paste `keybinds.json`, same as above but choose keybinds
+
 ## Extensions
 ```
 code --install-extension aaron-bond.better-comments
