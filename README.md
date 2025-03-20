@@ -1,10 +1,10 @@
 # VScode config
 
 ## Version
-1.92.2 max
+1.92.2 max, above will break APC extension
 
-## Install
-- Place `custom-css.css` in `.config/vscode/custom-css` (you should create this directory)
+## Installation
+- Place `custom-css.css` in `.config/vscode/custom-css`, you should create this directory
 - Copy/Paste `user_settings.json` in your `settings.json` (open command palette and choose to open settings in json format)
 - Copy/Paste `keybinds.json`, same as above but choose keybinds
 
