@@ -121,11 +121,10 @@ div.composite.title.has-composite-bar .composite-bar-container .actions-containe
 
 .monaco-workbench .pane-body.integrated-terminal .tabs-container {
     border-bottom: 1px solid var(--border-color) !important;
-    border-: var(--border-color) !important;
 }
 
 [id="workbench.parts.panel"] div.monaco-scrollable-element.mac {
-    background-color: var(--background-color) !important;
+    background-color: var(--background-color, var()) !important;
 }
 
 div.composite.title.has-composite-bar .composite-bar-container {
