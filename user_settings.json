@@ -9,8 +9,8 @@
   "editor.minimap.enabled": false,
   "editor.semanticHighlighting.enabled": true,
   "editor.tokenColorCustomizations": {
-    "functions": "#A9DC76",
-    "keywords": "#FF6188",
+    // "functions": "",
+    // "keywords": "",
     "[Monokai Pro]": {
       "textMateRules": [
         {
@@ -183,45 +183,45 @@
           }
         },
         {
-          "scope": "strong",
-          "settings": {
-            "fontStyle": "italic"
-          }
-        },
-        {
           "scope": "constant.language",
           "settings": {
-            "fontStyle": "italic"
+            "fontStyle": "italic",
+            "foreground": "#FF6188"
           }
         },
         {
           "scope": "storage.type",
           "settings": {
-            "fontStyle": "italic"
+            "fontStyle": "italic",
+            "foreground": "#FF6188"
           }
         },
         {
           "scope": "storage.modifier",
           "settings": {
-            "fontStyle": "italic"
+            "fontStyle": "italic",
+            "foreground": "#FF6188"
           }
         },
         {
           "scope": "keyword",
           "settings": {
-            "fontStyle": "italic"
+            "fontStyle": "italic",
+            "foreground": "#FF6188"
           }
         },
         {
           "scope": "keyword.control",
           "settings": {
-            "fontStyle": "italic"
+            "fontStyle": "italic",
+            "foreground": "#FF6188"
           }
         },
         {
           "scope": "variable.language",
           "settings": {
-            "fontStyle": "italic"
+            "fontStyle": "italic",
+            "foreground": "#FF6188"
           }
         },
         {
@@ -236,39 +236,44 @@
   },
   "editor.semanticTokenColorCustomizations": {
     "enabled": true,
-    "rules": {
-      "parameter": {
-        "foreground": "#F59762",
-        "fontStyle": "italic"
+    "[Monokai Pro]": {
+      "rules": {
+        "parameter": {
+          "foreground": "#F59762",
+          "fontStyle": "italic"
+        },
+        "function": "#A9DC76",
+        "keyword": {
+          "foreground": "#FF6188",
+          "fontStyle": "italic"
+        }
       }
     }
   },
   "editor.guides.indentation": true,
-  // Workbench
-  "workbench.colorTheme": "Monokai Pro",
   "workbench.tree.indent": 18,
   "workbench.colorCustomizations": {
-    "editorBracketHighlight.foreground1": "#87CEFA",
-    "editorBracketHighlight.foreground2": "#FFD700",
-    "editorBracketHighlight.foreground3": "#87CEFA",
-    "editorBracketHighlight.foreground4": "#DA70D6",
-    "editorBracketHighlight.foreground5": "#97c26c",
-    "editorBracketHighlight.foreground6": "#abb2c0",
-    "editorBracketHighlight.unexpectedBracket.foreground": "#db6165",
-    "phpParameterHint.hintForeground": "#FCFCFA",
-    "phpParameterHint.hintBackground": "#262427",
-    // Sidebar
-    "sideBar.background": "#2E2A2E",
-    "sideBar.border": "#353337",
-    // ActivityBar
-    "activityBar.background": "#2E2A2E",
-    "activityBar.border": "#353337",
-    // StatusBar
-    "statusBar.background": "#2E2A2E",
-    "statusBar.foreground": "#FFFFFF",
-    "statusBar.border": "#353337",
-    // Terminal
-    "terminal.background": "#2E2A2E",
+    "[Monokai Pro]": {
+      "editorBracketHighlight.foreground1": "#87CEFA",
+      "editorBracketHighlight.foreground2": "#FFD700",
+      "editorBracketHighlight.foreground3": "#87CEFA",
+      "editorBracketHighlight.foreground4": "#DA70D6",
+      "editorBracketHighlight.foreground5": "#97c26c",
+      "editorBracketHighlight.foreground6": "#abb2c0",
+      "editorBracketHighlight.unexpectedBracket.foreground": "#db6165",
+      "phpParameterHint.hintForeground": "#FCFCFA",
+      "phpParameterHint.hintBackground": "#262427",
+      // Sidebar
+      "sideBar.background": "#2E2A2E",
+      "sideBar.border": "#353337",
+      // ActivityBar
+      "activityBar.background": "#2E2A2E",
+      "activityBar.border": "#353337",
+      // StatusBar
+      "statusBar.foreground": "#FCFCFA",
+      // Terminal
+      "terminal.background": "#2E2A2E"
+    },
     "terminal.integrated.fontFamily": "'JetbrainsMono Nerd Font', 'monospace'",
     // Git colors
     "gitDecoration.ignoredResourceForeground": "#5B595C",
@@ -331,7 +336,6 @@
     ".pre": "php",
     "artisan": "php"
   },
-  "namespaceResolver.showMessageOnStatusBar": true,
   "workbench.startupEditor": "none",
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.js",
@@ -367,53 +371,53 @@
   "workbench.editor.titleScrollbarSizing": "large",
   "workbench.tree.expandMode": "doubleClick",
   "workbench.list.openMode": "doubleClick",
-  "better-comments.tags": [
-    {
-      "tag": "!",
-      "color": "#FF2D00",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "?",
-      "color": "#3498DB",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "//",
-      "color": "#474747",
-      "strikethrough": true,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "todo",
-      "color": "#87CEFA",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "*",
-      "color": "#98C379",
-      "strikethrough": false,
-      "underline": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    }
-  ],
+  // "better-comments.tags": [
+  //   {
+  //     "tag": "!",
+  //     "color": "#FF2D00",
+  //     "strikethrough": false,
+  //     "underline": false,
+  //     "backgroundColor": "transparent",
+  //     "bold": false,
+  //     "italic": false
+  //   },
+  //   {
+  //     "tag": "?",
+  //     "color": "#3498DB",
+  //     "strikethrough": false,
+  //     "underline": false,
+  //     "backgroundColor": "transparent",
+  //     "bold": false,
+  //     "italic": false
+  //   },
+  //   {
+  //     "tag": "//",
+  //     "color": "#474747",
+  //     "strikethrough": true,
+  //     "underline": false,
+  //     "backgroundColor": "transparent",
+  //     "bold": false,
+  //     "italic": false
+  //   },
+  //   {
+  //     "tag": "todo",
+  //     "color": "#87CEFA",
+  //     "strikethrough": false,
+  //     "underline": false,
+  //     "backgroundColor": "transparent",
+  //     "bold": false,
+  //     "italic": false
+  //   },
+  //   {
+  //     "tag": "*",
+  //     "color": "#98C379",
+  //     "strikethrough": false,
+  //     "underline": false,
+  //     "backgroundColor": "transparent",
+  //     "bold": false,
+  //     "italic": false
+  //   }
+  // ],
   "workbench.fontAliasing": "antialiased",
   "workbench.tree.enableStickyScroll": false,
   "workbench.list.horizontalScrolling": true,
@@ -435,7 +439,6 @@
   "[css]": {
     "editor.defaultFormatter": "stylelint.vscode-stylelint"
   },
-  "cSpell.userWords": ["ARTBOARD", "Avenir", "gsap", "htmltext"],
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -463,10 +466,13 @@
   "intelephense.codeLens.parent.enable": true,
   "intelephense.codeLens.references.enable": true,
   "intelephense.codeLens.usages.enable": true,
-  "workbench.activityBar.location": "hidden",
   "markdown-preview-enhanced.enablePreviewZenMode": true,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "editor.cursorBlinking": "smooth"
+  "editor.cursorBlinking": "smooth",
+  "files.saveConflictResolution": "overwriteFileOnDisk",
+  "svg.preview.transparencyGrid": true,
+  "workbench.colorTheme": "Monokai Pro",
+  "workbench.activityBar.location": "hidden"
 }
