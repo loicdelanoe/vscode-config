@@ -8,9 +8,11 @@ div.monokai-theme-monokai-pro-vscode-themes-Monokai-Pro-json {
     --font-primary-color: #929192;
     --font-secondary-color: #FFFFFF;
     --dirty-line-color: #FC9867;
+    --vscode-input-background: #2D2A2E;
 }
 
-div.dooez-alt-catppuccin-vsc-themes-macchiato-json {
+div.dooez-alt-catppuccin-vsc-themes-macchiato-json,
+div.Catppuccin-catppuccin-vsc-themes-macchiato-json {
     /* Catppuccin Machiatto */
     --background-color: #25273A;
     --background-color-darker: #1b1d2d;
@@ -20,6 +22,7 @@ div.dooez-alt-catppuccin-vsc-themes-macchiato-json {
     --font-primary-color: #C6A0F6;
     --font-secondary-color: #CAD3F5;
     --dirty-line-color: #90D7E3;
+    --vscode-input-background: #25273A;
 }
 
 /* Line numbers */
