@@ -8,11 +8,9 @@ div.monokai-theme-monokai-pro-vscode-themes-Monokai-Pro-json {
     --font-primary-color: #929192;
     --font-secondary-color: #FFFFFF;
     --dirty-line-color: #FC9867;
-    --vscode-input-background: #2D2A2E;
 }
 
-div.dooez-alt-catppuccin-vsc-themes-macchiato-json,
-div.Catppuccin-catppuccin-vsc-themes-macchiato-json {
+div.dooez-alt-catppuccin-vsc-themes-macchiato-json {
     /* Catppuccin Machiatto */
     --background-color: #25273A;
     --background-color-darker: #1b1d2d;
@@ -22,7 +20,6 @@ div.Catppuccin-catppuccin-vsc-themes-macchiato-json {
     --font-primary-color: #C6A0F6;
     --font-secondary-color: #CAD3F5;
     --dirty-line-color: #90D7E3;
-    --vscode-input-background: #25273A;
 }
 
 /* Line numbers */
@@ -97,10 +94,6 @@ div.Catppuccin-catppuccin-vsc-themes-macchiato-json {
 #terminal div.split-view-container {
     height: calc(100% - 0.4rem) !important;
 }
-
-.terminal.xterm {
-    background-color: red !important; /* Dark theme example */
-  }
 
 .composite.title.has-composite-bar {
     justify-content: space-between !important;
@@ -261,9 +254,13 @@ div.composite.title.has-composite-bar .composite-bar-container .action-item.chec
 
 /* Search Label */
 .search-label {
-    font-size: 14px !important;
+    font-size: 12px !important;
     display: block;
     color: var(--font-secondary-color) !important;
+}
+
+.action-item.command-center-center {
+    margin-left: -5px !important;
 }
 
 .titlebar-right {
@@ -308,16 +305,20 @@ div.composite.title.has-composite-bar .composite-bar-container .action-item.chec
 .quick-input-widget {
     transform: translateY(-50%) !important;
     top: 50% !important;
-    padding: 10px 10px 18px 10px !important;
+    padding: 0 !important;
     border-radius: 7px !important;
     background-color: var(--background-color, var(--vscode-quickInput-background)) !important;
     box-shadow: 0px 8px 32px rgba(0, 0, 0, .45) !important;
-    border: 1px solid var(--border-color-dark, var(--vscode-editorHoverWidget-border)) !important;
+    border: 1px solid var(--border-color, var(--vscode-editorHoverWidget-border)) !important;
 }
 
 .quick-input-widget .monaco-findInput {
     width: 100% !important;
     max-width: none !important;
+}
+
+.quick-input-widget .monaco-icon-label {
+    align-items: center !important;
 }
 
 .quick-input-widget .monaco-findInput .controls {
@@ -329,6 +330,7 @@ div.composite.title.has-composite-bar .composite-bar-container .action-item.chec
 .quick-input-widget .monaco-inputbox.idle.synthetic-focus {
     display: flex !important;
     width: 100% !important;
+    margin-bottom: 0.5rem !important;
 }
 
 /* Remove background for lists */
@@ -548,4 +550,94 @@ div.monaco-hover-content:has([style="color:#f96363;"]) > .hover-row:first-child 
 
 .activitybar {
     background: var(--background-color, var(--vscode-activityBar-background)) !important;
+}
+
+/* ---------- */
+/* Keybinding */
+/* ---------- */
+
+.monaco-keybinding-key {
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    font-size: 13.5px !important;
+    margin: 0 !important;
+    padding: 0 2px !important;
+}
+
+/* -------------- */
+/* Statusbar icon */
+/* -------------- */
+
+.statusbar .codicon {
+    font-size: 13px !important;
+}
+
+/* ----------------------------- */
+/* Remove Launchpad in Statusbar */
+/* ----------------------------- */
+
+[id="eamodio.gitlens.gitlens.launchpad"],
+[id="status.forwardedPorts"],
+[id="steoates.autoimport"],
+[id="status.editor.encoding"],
+[id="status.editor.eol"],
+[id="eamodio.gitlens.gitlens.graph"],
+[id="WallabyJs.quokka-vscode"] {
+    display: none !important;
+}
+
+[id="status.scm.1"] {
+    border-right: 1px solid var(--border-color) !important;
+    margin-right: 4px !important;
+    padding-right: 4px !important;
+}
+
+/* ------------------ */
+/* Add color to icons */
+/* ------------------ */
+
+.codicon.codicon-error {
+    color: #F66088 !important;
+    font-weight: bold !important;
+}
+
+.codicon.codicon-warning {
+    color: #E7C861 !important;
+    font-weight: bold !important;
+}
+
+/* ------------------ */
+/* Notification Toast */
+/* ------------------ */
+
+.suggest-input-container {
+    background-color: var(--background-color, var(--vscode-input-background)) !important;
+}
+
+.notifications-toasts.visible {
+    bottom: 40px !important;
+    right: 15px !important;
+}
+
+.notifications-toasts.visible .notification-list-item {
+    border-radius: 50% !important;
+}
+
+.notifications-toasts.visible .notification-toast {
+    background: var(--background-color) !important;
+    border-radius: 7px !important;
+    padding: 0.2rem 0.6rem !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+.notifications-center.visible {
+    bottom: 40px !important;
+    right: 15px !important;
+    border-radius: 7px !important;
+}
+
+.notifications-center-header {
+    background-color: var(--background-color, var(--vscode-notificationCenter-header-background)) !important;
+    border-bottom: 1px solid var(--border-color) !important;
 }
