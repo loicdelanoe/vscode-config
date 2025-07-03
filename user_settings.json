@@ -251,7 +251,7 @@
     }
   },
   "editor.guides.indentation": true,
-  "workbench.tree.indent": 18,
+  "workbench.tree.indent": 15,
   "workbench.colorCustomizations": {
     "[Monokai Pro]": {
       "editorBracketHighlight.foreground1": "#87CEFA",
@@ -282,7 +282,7 @@
     "gitDecoration.untrackedResourceForeground": "#F77669"
   },
   "workbench.tree.renderIndentGuides": "none",
-  "workbench.iconTheme": "a-file-icon-vscode",
+  "workbench.iconTheme": "ayu-mirage-zed",
   // Explorer
   "explorer.decorations.badges": false,
   "explorer.compactFolders": false,
@@ -293,10 +293,7 @@
   "terminal.integrated.lineHeight": 1.6,
   "terminal.integrated.cursorBlinking": true,
   // Apc
-  "apc.imports": [
-    "/Users/epic/Documents/vscode-custom/custom-css.css",
-    "/Users/epic/Documents/vscode-custom/custom-js.js"
-  ],
+  "apc.imports": ["/Users/loicdelanoe/Documents/vscode-backup/custom-css.css"],
   "apc.listRow": {
     "lists": [
       "customview-tree",
@@ -307,10 +304,11 @@
       "scm-view",
       "debug-view-content",
       "debug-breakpoints",
-      "tree"
+      "tree",
+      "quick-input-list"
     ],
     "height": 32,
-    "fontSize": 13.5
+    "fontSize": 13
   },
   // "apc.electron": {
   //   "titleBarStyle": "hiddenInset",
@@ -320,7 +318,7 @@
   //   }
   // },
   "apc.statusBar": {
-    "height": 30
+    "height": 33
   },
   // Disable auto-update
   "update.mode": "none",
@@ -334,7 +332,8 @@
     ".php_cs.dist": "php",
     ".php_cs": "php",
     ".pre": "php",
-    "artisan": "php"
+    "artisan": "php",
+    "*.stub": "php"
   },
   "workbench.startupEditor": "none",
   "explorer.fileNesting.patterns": {
@@ -369,8 +368,8 @@
     "dist": true
   },
   "workbench.editor.titleScrollbarSizing": "large",
-  "workbench.tree.expandMode": "doubleClick",
-  "workbench.list.openMode": "doubleClick",
+  // "workbench.tree.expandMode": "doubleClick",
+  // "workbench.list.openMode": "doubleClick",
   // "better-comments.tags": [
   //   {
   //     "tag": "!",
@@ -466,6 +465,77 @@
   "intelephense.codeLens.parent.enable": true,
   "intelephense.codeLens.references.enable": true,
   "intelephense.codeLens.usages.enable": true,
+  "intelephense.stubs": [
+    "apache",
+    "bcmath",
+    "bz2",
+    "calendar",
+    "com_dotnet",
+    "Core",
+    "ctype",
+    "curl",
+    "date",
+    "dba",
+    "dom",
+    "enchant",
+    "exif",
+    "FFI",
+    "fileinfo",
+    "filter",
+    "fpm",
+    "ftp",
+    "gd",
+    "gettext",
+    "gmp",
+    "hash",
+    "iconv",
+    "imap",
+    "intl",
+    "json",
+    "ldap",
+    "libxml",
+    "mbstring",
+    "meta",
+    "mysqli",
+    "oci8",
+    "odbc",
+    "openssl",
+    "pcntl",
+    "pcre",
+    "PDO",
+    "pgsql",
+    "Phar",
+    "posix",
+    "pspell",
+    "random",
+    "readline",
+    "Reflection",
+    "session",
+    "shmop",
+    "SimpleXML",
+    "snmp",
+    "soap",
+    "sockets",
+    "sodium",
+    "SPL",
+    "sqlite3",
+    "standard",
+    "superglobals",
+    "sysvmsg",
+    "sysvsem",
+    "sysvshm",
+    "tidy",
+    "tokenizer",
+    "xml",
+    "xmlreader",
+    "xmlrpc",
+    "xmlwriter",
+    "xsl",
+    "Zend OPcache",
+    "zip",
+    "zlib",
+    "wordpress"
+  ],
   "markdown-preview-enhanced.enablePreviewZenMode": true,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
