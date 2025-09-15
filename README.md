@@ -5,6 +5,12 @@ Compatible with last VSCode version
 
 ## Installation
 - Place `custom-css.css` in `.config/vscode/custom-css`, you should create this directory
+  - Don't forget to check the file path (you can simply go to the finder,find the file, copy and paste it in the `settings.json`)
+    ```json
+    "custom-ui-style.external.imports": [
+      "file:///Users/[your-name]/.config/vscode/custom-css.css"
+    ],
+    ```
 - Copy/Paste `user_settings.json` in your `settings.json` (open command palette and choose to open settings in json format)
 - Copy/Paste `keybinds.json`, same as above but choose keybinds
 
