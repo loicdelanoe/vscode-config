@@ -274,11 +274,6 @@
       "terminal.background": "#2E2A2E"
     },
     "terminal.integrated.fontFamily": "'JetbrainsMono Nerd Font', 'monospace'",
-    // Git colors
-    "gitDecoration.ignoredResourceForeground": "#5B595C",
-    "gitDecoration.modifiedResourceForeground": "#80CBC4",
-    "gitDecoration.addedResourceForeground": "#C3E887",
-    "gitDecoration.untrackedResourceForeground": "#F77669"
   },
   "workbench.tree.renderIndentGuides": "always",
   // Icon Theme
