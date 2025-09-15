@@ -222,7 +222,10 @@ div.composite.title.has-composite-bar .composite-bar-container .action-item.chec
 
 .statusbar {
     padding-left: 10px !important;
-    font-size: 1em !important;
+    height: 33px !important;
+    font-size: 13.5 !important;
+    position: absolute !important;
+    bottom: 0 !important;
 }
 
 .statusbar-item[aria-label="remote"] {
@@ -260,7 +263,7 @@ div.composite.title.has-composite-bar .composite-bar-container .action-item.chec
 }
 
 .action-item.command-center-center {
-    margin-left: -5px !important;
+    margin-left: 60px !important;
 }
 
 .titlebar-right {
@@ -640,4 +643,15 @@ div.monaco-hover-content:has([style="color:#f96363;"]) > .hover-row:first-child 
 .notifications-center-header {
     background-color: var(--background-color, var(--vscode-notificationCenter-header-background)) !important;
     border-bottom: 1px solid var(--border-color) !important;
+}
+
+.explorer-folders-view .monaco-list-row {
+    font-size: 13.5px !important;
+    padding-left: 20px !important;
+    font-weight: 400 !important;
+}
+
+.explorer-folders-view .monaco-list-row .monaco-icon-label:before {
+    background-size: 17px !important;
+    padding-right: 8px !important;
 }
